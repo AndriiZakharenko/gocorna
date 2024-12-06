@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint .",
-    "build": "webpack"
+    "build": "webpack",
+    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
