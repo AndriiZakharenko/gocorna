@@ -1,0 +1,65 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    // background-color: black;
+    font-family: $rubik;
+    font-weight: $normalRegular;
+    font-size: rem(12);
+    color: $darkGrey;
+    line-height: 1;
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    > main {
+        flex: 1 1 auto;
+    }
+    > * {
+        min-width: 0;
+    }
+}

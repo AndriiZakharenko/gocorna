@@ -1,0 +1,63 @@
+//========================= BURGER-CSS =========================//
+
+.icon-menu {
+    display: none;
+}
+
+.close-icon-menu {
+    display: none;
+}
+
+//========================= BURGER-CSS (BREAKPOINTS) =========================//
+
+@media (max-width: $mobileLarge) {
+    .icon-menu {
+        display: flex;
+        position: relative;
+        flex: 0 0 rem(30);
+        height: rem(18);
+        flex-direction: column;
+        justify-content: space-between;
+        margin: rem(0) rem(0) rem(0) rem(20);
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: $black;
+            height: rem(2);
+        }
+
+        span {
+            background-color: $black;
+            height: rem(2);
+        }
+    }
+
+    .close-icon-menu {
+        display: none;
+        position: relative;
+        flex: 0 0 rem(30);
+        height: rem(18);
+        flex-direction: column;
+        justify-content: space-between;
+        margin: rem(0) rem(0) rem(0) rem(20);
+
+        &::before,
+        &::after {
+            content: "";
+            background-color: $black;
+            height: rem(2);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+        }
+
+        &::before {
+            transform: rotate(45deg);
+        }
+        &::after {
+            transform: rotate(-45deg);
+        }
+    }
+}

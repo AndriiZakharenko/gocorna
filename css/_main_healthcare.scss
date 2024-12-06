@@ -1,0 +1,143 @@
+//========================= MAIN_HEALTHCARE =========================//
+
+.healthcare {
+    padding: rem(80) rem(0) rem(30) rem(0);
+
+    // .healthcare__container
+    &__container {
+    }
+
+    // .healthcare__block-text
+    &__block-text {
+        margin: rem(0) rem(0) rem(45) rem(0);
+    }
+
+    // .healthcare__items
+    &__items {
+        display: flex;
+        max-width: rem(980);
+    }
+
+    // .healthcare__column
+    &__column {
+        position: relative;
+        padding: rem(0) rem(36);
+        flex: 0 1 33.333%;
+
+        // .healthcare__column_1
+        &_1 {
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $almostRed3;
+                border-radius: rem(16);
+            }
+
+            &::before {
+                width: rem(65);
+                height: rem(65);
+                bottom: rem(-35);
+                left: rem(15);
+                transform: rotate(-30deg);
+            }
+
+            &::after {
+                width: rem(97);
+                height: rem(97);
+                top: rem(35);
+                right: rem(-10);
+                border-radius: rem(30);
+                transform: rotate(30deg);
+            }
+        }
+        // .healthcare__column_1
+        &_2 {
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $almostRed3;
+                width: rem(127);
+                height: rem(127);
+                bottom: rem(-35);
+                right: rem(-35);
+                border-radius: rem(30);
+                transform: rotate(55deg);
+            }
+        }
+        // .healthcare__column_1
+        &_3 {
+            &::after {
+                content: "";
+                position: absolute;
+                background-color: $almostRed3;
+                width: rem(65);
+                height: rem(65);
+                top: rem(-25);
+                right: rem(10);
+                border-radius: rem(16);
+                transform: rotate(40deg);
+            }
+        }
+    }
+
+    // .healthcare__item
+    &__item {
+    }
+}
+
+.item-healthcare {
+    height: 100%;
+    background-color: $white;
+    box-shadow: rem(0) rem(4) rem(18) rgba(88, 126, 236, 0.18);
+    border-radius: rem(8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: rem(35) rem(17);
+    position: relative;
+    z-index: 2;
+
+    // .item-healthcare__icon
+    &__icon {
+        margin-bottom: rem(58);
+    }
+
+    // .item-healthcare__title
+    &__title {
+        font-weight: $bold;
+        font-size: rem(16);
+        line-height: 1.38;
+        color: $black;
+        margin-bottom: rem(4);
+    }
+
+    // .item-healthcare__text
+    &__text {
+        line-height: 1.38;
+    }
+}
+
+//========================= MAIN_HEALTHCARE (BREAKPOINTS) =========================//
+
+@media (max-width: $pc) {
+    .healthcare__column {
+        padding: rem(0) rem(15);
+    }
+}
+
+@media (max-width: $tablet) {
+    .healthcare {
+        padding: rem(30) rem(0);
+    }
+
+    .healthcare__items {
+        flex-direction: column;
+    }
+    .healthcare__column{
+        &:not(:last-child){
+            margin-bottom: rem(25);
+        }
+    }
+}

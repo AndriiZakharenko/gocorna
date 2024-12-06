@@ -1,0 +1,43 @@
+//========================= FOOTER =========================//
+
+// &display=swap
+// &display=swap&subset=cyrillic-ext
+
+// RUBIK
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/rubik/Rubik-Bold.woff2") format("woff2"), url("../fonts/rubik/Rubik-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/rubik/Rubik-Regular.woff2") format("woff2"),
+        url("../fonts/rubik/Rubik-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// RALEWAY
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-ExtraBold.woff2") format("woff2"),
+        url("../fonts/raleway/Raleway-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/raleway/Raleway-Bold.woff2") format("woff2"),
+        url("../fonts/raleway/Raleway-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,129 @@
+//========================= MAIN_GETSTARTED =========================//
+
+.getstarted {
+    background-color: $almostWhite2;
+
+    // .getstarted__container
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding: rem(150) rem(15) rem(50) rem(15);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100vw;
+            height: 100%;
+            top: 0;
+            right: rem(267);
+            border-radius: rem(30) rem(0) rem(0) rem(30);
+            background-color: $almostRed3;
+            transform: translate(100%, rem(0));
+        }
+    }
+
+    // .getstarted__content
+    &__content {
+        flex: 0 1 48%;
+        padding: rem(0) rem(20);
+    }
+
+    // .getstarted__block-text
+    &__block-text {
+        max-width: rem(410);
+    }
+
+    // .getstarted__image
+    &__image {
+        flex: 0 1 52%;
+        position: relative;
+        z-index: 2;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    // .getstarted__video
+    &__video {
+        flex: 1 1 100%;
+        padding: rem(60) rem(0) rem(0) rem(20);
+    }
+}
+
+.video-getstarted {
+    display: inline-flex;
+    align-items: center;
+
+    // .video-getstarted__icon
+    &__icon {
+        flex: 0 0 rem(44);
+    }
+
+    // .video-getstarted__body
+    &__body {
+        padding: rem(0) rem(0) rem(0) rem(12);
+    }
+
+    // .video-getstarted__title
+    &__title {
+        color: $almostGrey;
+        font-size: rem(13);
+        line-height: 1.26;
+        letter-spacing: em(1.5);
+
+        &:not(:last-child) {
+            margin: rem(0) rem(0) rem(5) rem(0);
+        }
+    }
+
+    // .video-getstarted__text
+    &__text {
+        text-transform: uppercase;
+        font-size: rem(9);
+        line-height: 1.26;
+        letter-spacing: em(2);
+    }
+}
+
+//========================= MAIN_GETSTARTED (BREAKPOINTS) =========================//
+
+@media (max-width: $tablet) {
+    .getstarted__container {
+        &::before {
+            right: rem(215);
+            border-radius: rem(20) rem(0) rem(0) rem(20);
+        }
+    }
+}
+
+@media (max-width: $mobileLarge) {
+    .getstarted__container {
+        padding: rem(100) rem(15) rem(30) rem(15);
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .getstarted__block-text {
+        max-width: none;
+    }
+
+    .getstarted__content {
+        flex: 1 1 auto;
+        padding: rem(0);
+    }
+
+    .getstarted__image {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: rem(30) rem(0);
+    }
+
+    .getstarted__video {
+        padding: rem(0);
+    }
+}
