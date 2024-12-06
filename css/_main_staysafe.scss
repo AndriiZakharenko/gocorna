@@ -1,0 +1,122 @@
+//========================= MAIN_STAYSAFE =========================//
+
+.staysafe {
+    padding: rem(80) rem(0);
+
+    // .staysafe__container
+    &__container {
+        display: flex;
+        align-items: center;
+    }
+
+    // .staysafe__media
+    &__media {
+        flex: 0 1 50%;
+    }
+
+    // .staysafe__content
+    &__content {
+        flex: 0 1 50%;
+    }
+
+    // .staysafe__block-text
+    &__block-text {
+    }
+}
+
+.media-staysafe {
+    width: rem(373);
+    position: relative;
+    text-align: center;
+    padding: rem(56) rem(0) rem(27) rem(0);
+
+    // .media-staysafe__image
+    &__image {
+        display: inline-block;
+        box-shadow: rem(2) rem(4) rem(32) rgba(0, 0, 0, 0.12);
+        border-radius: rem(16);
+        position: relative;
+        width: 61.5%;
+
+        img {
+            position: relative;
+            z-index: 5;
+            max-width: 100%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: rem(-12);
+            left: rem(12);
+            width: rem(206);
+            height: rem(27);
+            background-color: rgba(240, 240, 240, 0.49);
+            border-radius: rem(16);
+            z-index: 2;
+        }
+    }
+
+    // .media-staysafe__item
+    &__item {
+        position: absolute;
+        background-color: $almostRed3;
+        border-radius: rem(30);
+        width: rem(77);
+        height: rem(77);
+
+        // .media-staysafe__item_1
+        &_1 {
+            top: rem(0);
+            left: rem(0);
+            width: rem(147);
+            height: rem(147);
+        }
+
+        // .media-staysafe__item_2
+        &_2 {
+            bottom: rem(0);
+            left: rem(33);
+        }
+
+        // .media-staysafe__item_3
+        &_3 {
+            bottom: rem(107);
+            right: rem(34);
+        }
+    }
+}
+
+//========================= MAIN_STAYSAFE (BREAKPOINT) =========================//
+
+@media (min-width: $tablet) {
+    .staysafe__media {
+        padding: rem(0) rem(0) rem(0) rem(47);
+    }
+}
+
+@media (max-width: $tablet) {
+    .staysafe {
+        padding: rem(40) rem(0);
+    }
+}
+
+@media (max-width: $mobileLarge) {
+    .staysafe {
+        padding: rem(30) rem(0);
+    }
+
+    .staysafe__container {
+        flex-direction: column-reverse;
+    }
+
+    .staysafe__content {
+        margin: rem(0) rem(0) rem(30) rem(0);
+    }
+}
+
+@media (max-width: $mobileSmall) {
+    .media-staysafe {
+        width: rem(290);
+    }
+}

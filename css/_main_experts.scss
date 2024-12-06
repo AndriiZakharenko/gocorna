@@ -1,0 +1,178 @@
+//========================= MAIN_EXPERTS =========================//
+
+.experts {
+    background-color: $almostWhite2;
+    padding: rem(103) rem(0) rem(116) rem(0);
+
+    // .experts__container
+    &__container {
+    }
+
+    // .experts__statistics
+    &__statistics {
+    }
+
+    // .experts__body
+    &__body {
+        display: flex;
+        align-items: center;
+    }
+
+    // .experts__content
+    &__content {
+        flex: 0 1 50%;
+        padding: rem(0) rem(20) rem(0) rem(0);
+    }
+
+    // .experts__block-text
+    &__block-text {
+        max-width: rem(400);
+    }
+
+    // .experts__video
+    &__video {
+        flex: 0 1 50%;
+        padding: rem(0) rem(0) 30% rem(0);
+        position: relative;
+        border-radius: rem(8);
+        box-shadow: rem(0) rem(4) rem(18) rgba(88, 126, 236, 0.18);
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+        }
+    }
+}
+
+.statistics-experts {
+    max-width: rem(655);
+    margin: 0 auto;
+    position: relative;
+
+    // .statistics-experts__body
+    &__body {
+        position: relative;
+        z-index: 2;
+        background-color: $white;
+        border-radius: rem(16);
+        box-shadow: rem(0) rem(2) rem(24) rgba(88, 126, 236, 0.15);
+        margin: rem(0) rem(0) rem(80) rem(0);
+    }
+
+    // .statistics-experts__decor
+    &__decor {
+        position: absolute;
+        background-color: $almostRed3;
+        border-radius: rem(30);
+
+        // .statistics-experts__decor_1
+        &_1 {
+            width: rem(65);
+            height: rem(65);
+            border-radius: rem(16);
+            transform: rotate(-30deg);
+            bottom: rem(-21);
+            left: rem(-21);
+        }
+
+        // .statistics-experts__decor_2
+        &_2 {
+            width: rem(97);
+            height: rem(97);
+            right: 50%;
+            top: rem(-40);
+            transform: rotate(30deg);
+        }
+
+        // .statistics-experts__decor_3
+        &_3 {
+            width: rem(128);
+            height: rem(128);
+            right: -7%;
+            top: rem(0);
+            transform: rotate(-30deg);
+        }
+    }
+}
+.body-statistics-experts {
+    padding: rem(25) rem(80);
+    display: flex;
+    align-items: center;
+
+    // .body-statistics-experts__item
+    &__item {
+        flex: 1 1 25%;
+        text-align: center;
+
+        &:last-child {
+            flex: 0 1 50%;
+        }
+    }
+
+    // .body-statistics-experts__value
+    &__value {
+        font-weight: $bold;
+        font-size: rem(36);
+        line-height: 1.2;
+        letter-spacing: em(1);
+        color: $almostRed3;
+        margin-bottom: rem(5);
+    }
+
+    // .body-statistics-experts__text
+    &__text {
+        font-weight: $bold;
+        font-size: rem(11);
+        line-height: 1.8;
+        letter-spacing: em(3);
+        text-transform: uppercase;
+        color: $black;
+    }
+}
+
+//========================= MAIN_EXPERTS (BREAKPOINTS) =========================//
+
+@media (max-width: $mobileLarge) {
+    .experts {
+        padding: rem(80) rem(0) rem(30) rem(0);
+    }
+
+    .experts__body {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .experts__video {
+        padding: rem(0) rem(0) 58% rem(0);
+    }
+
+    .experts__content {
+        padding: rem(0);
+        margin-bottom: rem(30);
+    }
+
+    .statistics-experts__body {
+        margin-bottom: rem(50);
+    }
+
+    .body-statistics-experts {
+        padding: rem(25);
+    }
+}
+
+@media (max-width: $mobileSmall) {
+    .body-statistics-experts {
+        flex-direction: column;
+    }
+
+    .body-statistics-experts__item {
+        &:not(:last-child) {
+            margin-bottom: rem(15);
+        }
+    }
+}
