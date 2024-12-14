@@ -1,6 +1,8 @@
 # Gocorna
 
 - HTM, CSS (SCSS), JS
+- BEM
+- Adaptive
 
 ## Demo Links
 
