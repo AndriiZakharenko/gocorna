@@ -3,6 +3,7 @@
 - HTM, CSS (SCSS), JS
 - BEM
 - Adaptive
+- Webpack
 
 ## Demo Links
 
