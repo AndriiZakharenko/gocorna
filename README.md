@@ -1,9 +1,20 @@
 # Gocorna
 
-- HTM, CSS (SCSS), JS
-- BEM
+### Description
+
+- Created a landing page
+
+### Stack
+
+- HTML (BEM)
+- CSS (SCSS)
+- JS
 - Adaptive
+
+### Tools
+
 - Webpack
+- Babel
 
 ## Demo Links
 
