@@ -1,6 +1,3 @@
-//========================= FONTS =========================//
-
-// COLORS (MAIN)
 $white: #ffffff;
 $black: #000000;
 $red: #ff0000;
@@ -9,7 +6,6 @@ $green: #008000;
 $yellow: #ffff00;
 $grey: #808080;
 
-// COLORS (PROJECT)
 $darkGrey: #616161;
 $almostGrey: #b0b0b0;
 $almostWhite: #fcfdfe;
@@ -21,8 +17,6 @@ $almostRed: #ec5863;
 $almostRed2: #f37a82;
 $almostRed3: #ec5863;
 
-
-// WEIGHTS
 $thin: 100;
 $thinLight: 200;
 $light: 300;
@@ -33,17 +27,14 @@ $bold: 700;
 $extraBold: 800;
 $Black: 900;
 
-// FONTS
 $rubik: "Rubik", sans-serif;
 $raleway: "Raleway", sans-serif;
 
-//========================= BREAKPOINTS =========================//
-$pc: em(1087); // PC
-$tablet: em(991.98); // Tablet
-$mobileLarge: em(767.98); // Mobile Large
-$mobileSmall: em(479.98); // Mobile Small
+$pc: em(1087);
+$tablet: em(991.98);
+$mobileLarge: em(767.98);
+$mobileSmall: em(479.98); 
 
-//========================= IBG =========================//
 ._ibg {
     position: relative;
 }

@@ -1,35 +1,21 @@
-//========================= MAIN_EXPERTS =========================//
-
 .experts {
     background-color: $almostWhite2;
     padding: rem(103) rem(0) rem(116) rem(0);
 
-    // .experts__container
-    &__container {
-    }
-
-    // .experts__statistics
-    &__statistics {
-    }
-
-    // .experts__body
     &__body {
         display: flex;
         align-items: center;
     }
 
-    // .experts__content
     &__content {
         flex: 0 1 50%;
         padding: rem(0) rem(20) rem(0) rem(0);
     }
 
-    // .experts__block-text
     &__block-text {
         max-width: rem(400);
     }
 
-    // .experts__video
     &__video {
         flex: 0 1 50%;
         padding: rem(0) rem(0) 30% rem(0);
@@ -54,7 +40,6 @@
     margin: 0 auto;
     position: relative;
 
-    // .statistics-experts__body
     &__body {
         position: relative;
         z-index: 2;
@@ -64,13 +49,11 @@
         margin: rem(0) rem(0) rem(80) rem(0);
     }
 
-    // .statistics-experts__decor
     &__decor {
         position: absolute;
         background-color: $almostRed3;
         border-radius: rem(30);
 
-        // .statistics-experts__decor_1
         &_1 {
             width: rem(65);
             height: rem(65);
@@ -80,7 +63,6 @@
             left: rem(-21);
         }
 
-        // .statistics-experts__decor_2
         &_2 {
             width: rem(97);
             height: rem(97);
@@ -89,7 +71,6 @@
             transform: rotate(30deg);
         }
 
-        // .statistics-experts__decor_3
         &_3 {
             width: rem(128);
             height: rem(128);
@@ -104,7 +85,6 @@
     display: flex;
     align-items: center;
 
-    // .body-statistics-experts__item
     &__item {
         flex: 1 1 25%;
         text-align: center;
@@ -114,7 +94,6 @@
         }
     }
 
-    // .body-statistics-experts__value
     &__value {
         font-weight: $bold;
         font-size: rem(36);
@@ -124,7 +103,6 @@
         margin-bottom: rem(5);
     }
 
-    // .body-statistics-experts__text
     &__text {
         font-weight: $bold;
         font-size: rem(11);
@@ -134,8 +112,6 @@
         color: $black;
     }
 }
-
-//========================= MAIN_EXPERTS (BREAKPOINTS) =========================//
 
 @media (max-width: $mobileLarge) {
     .experts {

@@ -1,13 +1,6 @@
-//========================= FOOTER =========================//
-
 .footer {
     padding: rem(45) rem(0);
 
-    // .footer__container
-    &__container {
-    }
-
-    // .footer__items
     &__items {
         display: flex;
         column-gap: rem(50);
@@ -16,12 +9,7 @@
         align-items: center;
     }
 
-    // .footer__item
-    &__item {
-    }
 }
-
-//========================= FOOTER (BREAKPOINTS) =========================//
 
 @media (max-width: rem(500)){
 .footer{
