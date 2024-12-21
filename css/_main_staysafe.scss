@@ -1,27 +1,19 @@
-//========================= MAIN_STAYSAFE =========================//
-
 .staysafe {
     padding: rem(80) rem(0);
 
-    // .staysafe__container
     &__container {
         display: flex;
         align-items: center;
     }
 
-    // .staysafe__media
     &__media {
         flex: 0 1 50%;
     }
 
-    // .staysafe__content
     &__content {
         flex: 0 1 50%;
     }
 
-    // .staysafe__block-text
-    &__block-text {
-    }
 }
 
 .media-staysafe {
@@ -30,7 +22,6 @@
     text-align: center;
     padding: rem(56) rem(0) rem(27) rem(0);
 
-    // .media-staysafe__image
     &__image {
         display: inline-block;
         box-shadow: rem(2) rem(4) rem(32) rgba(0, 0, 0, 0.12);
@@ -57,7 +48,6 @@
         }
     }
 
-    // .media-staysafe__item
     &__item {
         position: absolute;
         background-color: $almostRed3;
@@ -65,7 +55,6 @@
         width: rem(77);
         height: rem(77);
 
-        // .media-staysafe__item_1
         &_1 {
             top: rem(0);
             left: rem(0);
@@ -73,21 +62,17 @@
             height: rem(147);
         }
 
-        // .media-staysafe__item_2
         &_2 {
             bottom: rem(0);
             left: rem(33);
         }
 
-        // .media-staysafe__item_3
         &_3 {
             bottom: rem(107);
             right: rem(34);
         }
     }
 }
-
-//========================= MAIN_STAYSAFE (BREAKPOINT) =========================//
 
 @media (min-width: $tablet) {
     .staysafe__media {

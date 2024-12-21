@@ -1,9 +1,6 @@
-//========================= MAIN_GETSTARTED =========================//
-
 .getstarted {
     background-color: $almostWhite2;
 
-    // .getstarted__container
     &__container {
         display: flex;
         align-items: center;
@@ -24,18 +21,15 @@
         }
     }
 
-    // .getstarted__content
     &__content {
         flex: 0 1 48%;
         padding: rem(0) rem(20);
     }
 
-    // .getstarted__block-text
     &__block-text {
         max-width: rem(410);
     }
 
-    // .getstarted__image
     &__image {
         flex: 0 1 52%;
         position: relative;
@@ -46,7 +40,6 @@
         }
     }
 
-    // .getstarted__video
     &__video {
         flex: 1 1 100%;
         padding: rem(60) rem(0) rem(0) rem(20);
@@ -57,17 +50,14 @@
     display: inline-flex;
     align-items: center;
 
-    // .video-getstarted__icon
     &__icon {
         flex: 0 0 rem(44);
     }
 
-    // .video-getstarted__body
     &__body {
         padding: rem(0) rem(0) rem(0) rem(12);
     }
 
-    // .video-getstarted__title
     &__title {
         color: $almostGrey;
         font-size: rem(13);
@@ -79,7 +69,6 @@
         }
     }
 
-    // .video-getstarted__text
     &__text {
         text-transform: uppercase;
         font-size: rem(9);
@@ -87,8 +76,6 @@
         letter-spacing: em(2);
     }
 }
-
-//========================= MAIN_GETSTARTED (BREAKPOINTS) =========================//
 
 @media (max-width: $tablet) {
     .getstarted__container {

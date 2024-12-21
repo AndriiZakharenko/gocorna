@@ -1,12 +1,8 @@
-//========================= CONTAINER =========================//
-
 ._container {
     max-width: rem(1087);
     padding: 0px rem(15);
     margin: 0px auto;
 }
-
-//========================= BUTTON =========================//
 
 .button {
     display: inline-block;
@@ -27,16 +23,12 @@
     }
 }
 
-//========================= BLOCK-TEXT =========================//
-
 .block-text {
 
-    // .block-text_center
     &_center {
         text-align: center;
     }
 
-    // .block-text__title
     &__title {
         font-size: rem(44);
         font-weight: $bold;
@@ -51,7 +43,6 @@
             margin: rem(0) rem(0) rem(12) rem(0);
         }
 
-        // .block-text__title_blue
         &_blue {
             span {
                 color: $almostBlue;
@@ -59,8 +50,6 @@
         }
 
     }
-
-    // .block-text__text
     &__text {
         line-height: 1.38;
 
@@ -68,20 +57,14 @@
             margin: rem(0) rem(0) rem(24) rem(0);
         }
 
-        // .block-text__text_mw
         &_mw{
             max-width: rem(620);
             margin: 0 auto;
         }
     }
 
-    // .block-text__button
-    &__button {
-    }
+
 }
-
-//========================= BLOCK-TEXT (BREAKPOINTS) =========================//
-
 
 @media (max-width: $mobileLarge){
     .block-text__title {
