@@ -16,7 +16,7 @@
 - Webpack
 - Babel
 
-## Demo Links
+### Demo Links
 
 - [Demo](https://AndriiZakharenko.github.io/gocorna/)
 - [Figma](https://www.figma.com/community/file/881195862226597419)
